@@ -1,0 +1,57 @@
+{
+  "name": "n8n-nodes-addsheet",
+  "version": "0.1.0",
+  "description": "Add a sheet to an XLSX file",
+  "keywords": ["XLSX", "Excel", "Spreadsheet", "Add", "n8n-community-node-package"],
+  "license": "MIT",
+  "homepage": "",
+  "author": {
+    "name": "Joost Verheijen | Z.kracht",
+    "email": "n8n@zkracht.nl"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=18.10",
+    "pnpm": ">=9.1"
+  },
+  "packageManager": "pnpm@9.1.4",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "tsc && gulp build:icons && copyfiles -u 1 nodes/Sheetmaster/addsheet.js dist/nodes/",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+
+    ],
+    "nodes": [
+      "dist/nodes/Addsheet/Addsheet.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.1",
+    "gulp": "^4.0.2",
+    "n8n-workflow": "*",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.3",
+    "exceljs" : "*",
+    "copyfiles" : "^2.4.1"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}

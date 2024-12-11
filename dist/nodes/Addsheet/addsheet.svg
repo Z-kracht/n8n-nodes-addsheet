@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1064.5 804">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #fff;
+      }
+
+      .st1 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 400px;
+        stroke: #fff;
+        stroke-width: 10px;
+      }
+
+      .st1, .st2 {
+        stroke-miterlimit: 10;
+      }
+
+      .st2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 5px;
+      }
+
+      .st3 {
+        fill: url(#Naamloos_verloop_315);
+      }
+    </style>
+    <radialGradient id="Naamloos_verloop_315" data-name="Naamloos verloop 315" cx="924.25" cy="634.25" fx="924.25" fy="634.25" r="140.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#008300"/>
+      <stop offset="1" stop-color="#006d00"/>
+    </radialGradient>
+  </defs>
+  <g>
+    <rect x=".5" y="45.5" width="982" height="641" rx="11.5" ry="11.5"/>
+    <path d="M971,46c6.07,0,11,4.93,11,11v618c0,6.07-4.93,11-11,11H12c-6.07,0-11-4.93-11-11V57c0-6.07,4.93-11,11-11h959M971,45H12c-6.6,0-12,5.4-12,12v618c0,6.6,5.4,12,12,12h959c6.6,0,12-5.4,12-12V57c0-6.6-5.4-12-12-12h0Z"/>
+  </g>
+  <g>
+    <rect class="st0" x="12.5" y="54.5" width="958" height="623" rx="11.5" ry="11.5"/>
+    <path d="M959,55c6.07,0,11,4.93,11,11v600c0,6.07-4.93,11-11,11H24c-6.07,0-11-4.93-11-11V66c0-6.07,4.93-11,11-11h935M959,54H24c-6.6,0-12,5.4-12,12v600c0,6.6,5.4,12,12,12h935c6.6,0,12-5.4,12-12V66c0-6.6-5.4-12-12-12h0Z"/>
+  </g>
+  <line class="st2" x1="165.5" y1="55" x2="165.5" y2="679"/>
+  <line class="st2" x1="323.5" y1="55" x2="323.5" y2="679"/>
+  <line class="st2" x1="12.5" y1="50" x2="12.5" y2="674"/>
+  <line class="st2" x1="491.5" y1="54" x2="491.5" y2="678"/>
+  <line class="st2" x1="971.5" y1="50" x2="971.5" y2="674"/>
+  <line class="st2" x1="647.5" y1="55" x2="647.5" y2="679"/>
+  <line class="st2" x1="809.5" y1="55" x2="809.5" y2="679"/>
+  <line class="st2" x1="13" y1="106.5" x2="972" y2="106.5"/>
+  <line class="st2" x1="12" y1="314.5" x2="971" y2="314.5"/>
+  <line class="st2" x1="13" y1="54.5" x2="972" y2="54.5"/>
+  <line class="st2" x1="13" y1="158.5" x2="972" y2="158.5"/>
+  <line class="st2" x1="12" y1="210.5" x2="971" y2="210.5"/>
+  <line class="st2" x1="13" y1="262.5" x2="972" y2="262.5"/>
+  <line class="st2" x1="13" y1="361.5" x2="972" y2="361.5"/>
+  <line class="st2" x1="12" y1="418.5" x2="971" y2="418.5"/>
+  <line class="st2" x1="11" y1="626.5" x2="970" y2="626.5"/>
+  <line class="st2" x1="12" y1="470.5" x2="971" y2="470.5"/>
+  <line class="st2" x1="11" y1="522.5" x2="970" y2="522.5"/>
+  <line class="st2" x1="12" y1="574.5" x2="971" y2="574.5"/>
+  <circle class="st3" cx="924.25" cy="634.25" r="140.25"/>
+  <text class="st1" transform="translate(807.5 744)"><tspan x="0" y="0">+</tspan></text>
+  <text/>
+</svg>
