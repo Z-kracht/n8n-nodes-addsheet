@@ -13,8 +13,8 @@ export class Addsheet implements INodeType {
 		defaults: {
 			name: 'Add Sheet',
 		},
-		inputs: ['main'],
-		outputs: ['main'],
+		inputs: [],
+		outputs: [],
 		credentials: [
 
 		],
@@ -28,8 +28,8 @@ export class Addsheet implements INodeType {
 		},
 		properties: [
 			{
-				displayName: 'Add Sheet', // The value the user sees in the UI
-				name: 'addsheet', // The name used to reference the element UI within the code
+				displayName: 'Sheetname', // The value the user sees in the UI
+				name: 'sheetname', // The name used to reference the element UI within the code
 				type: 'string',
 				required: true, // Whether the field is required or not
 				default: 'Sheet 1',
@@ -65,7 +65,7 @@ export class Addsheet implements INodeType {
 	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
 		//const items = this.getInputData();
 
-		const sheetname = this.getNodeParameter('addsheet', 0) as string;
+		const sheetname = this.getNodeParameter('sheetname', 0) as string;
 		const data = this.getNodeParameter('data', 0) as string;
 		const docString = this.getNodeParameter("binaryfile", 0) as object;
 
@@ -73,7 +73,7 @@ export class Addsheet implements INodeType {
 
 		// Voeg data toe aan de sheet
 		const addsheetPath = path.resolve(__dirname, 'addsheet.js');
-		const { addsheet } = require(addsheetPath);
+		const { addsheet } = await import(addsheetPath);
 
 		const result = addsheet(sheetname, data, docString);
 

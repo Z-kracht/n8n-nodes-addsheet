@@ -1,8 +1,14 @@
 {
   "name": "n8n-nodes-addsheet",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Add a sheet to an XLSX file",
-  "keywords": ["XLSX", "Excel", "Spreadsheet", "Add", "n8n-community-node-package"],
+  "keywords": [
+    "XLSX",
+    "Excel",
+    "Spreadsheet",
+    "Add",
+    "n8n-community-node-package"
+  ],
   "license": "MIT",
   "homepage": "",
   "author": {
@@ -33,23 +39,24 @@
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
-    "credentials": [
-
-    ],
+    "credentials": [],
     "nodes": [
       "dist/nodes/Addsheet/Addsheet.node.js"
     ]
   },
   "devDependencies": {
+    "@eslint/js": "^9.16.0",
     "@typescript-eslint/parser": "^7.15.0",
-    "eslint": "^8.56.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.57.1",
     "eslint-plugin-n8n-nodes-base": "^1.16.1",
-    "gulp": "^4.0.2",
+    "exceljs": "*",
+    "globals": "^15.13.0",
+    "gulp": "^5.0.0",
     "n8n-workflow": "*",
     "prettier": "^3.3.2",
     "typescript": "^5.5.3",
-    "exceljs" : "*",
-    "copyfiles" : "^2.4.1"
+    "typescript-eslint": "^8.18.0"
   },
   "peerDependencies": {
     "n8n-workflow": "*"

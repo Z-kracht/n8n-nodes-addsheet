@@ -1,7 +1,7 @@
 const XLSX = require('xlsx');
 
 function addsheet(sheetname, data, docString) {
-	documentBase64 = docString.data;
+	const documentBase64 = docString.data;
 	if (!sheetname || typeof sheetname !== 'string') {
 		throw new Error('Invalid or missing sheetname');
 	}
