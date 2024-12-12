@@ -65,7 +65,7 @@ export class Addsheet implements INodeType {
 	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
 		//const items = this.getInputData();
 
-		const sheetname = this.getNodeParameter('sheetname', 0) as string;
+		const sheetname = this.getNodeParameter('addsheet', 0) as string;
 		const data = this.getNodeParameter('data', 0) as string;
 		const docString = this.getNodeParameter("binaryfile", 0) as object;
 
