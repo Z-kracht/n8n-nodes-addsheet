@@ -19,5 +19,5 @@ jobs:
   scan:
     # Bij schedule ontbreekt github.event.repository (geen webhook-payload); schedule draait
     # altijd op de default branch. Bij workflow_dispatch wél controleren op de branch.
-    if: github.event_name == 'schedule' || github.ref_name == github.event.repository.default_branch
-    uses: Z-kracht/zkracht-security/.github/workflows/repo-scan.yml@c7cf51435cb05d37a79b599ab117d7b37453ae4c # zkracht-security main, 4 nov 2026 (pin-fix) — bewust bijwerken
+    if: github.event_name == 'schedule' || (github.ref_type == 'branch' && github.ref_name == github.event.repository.default_branch)
+    uses: Z-kracht/zkracht-security/.github/workflows/repo-scan.yml@28bf062bbfb5e15514dc0dd15cb1564a9a882ce1 # zkracht-security main, 11 nov 2026 (job.workflow_sha) — bewust bijwerkennov 2026 (pin-fix) — bewust bijwerken
