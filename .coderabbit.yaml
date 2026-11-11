@@ -51,14 +51,15 @@ reviews:
         in dev-, test- en local-compose niet verplicht.
     - path: "**/Jenkinsfile"
       instructions: |
-        Elke 'docker compose' met docker-compose.test.yml moet een eigen projectnaam voor de
+        docker-compose.test.yml draait alleen kortstondig op staging tijdens de pipeline en hoeft geen
+        tijdzone-mounts te hebben. Elke 'docker compose' met docker-compose.test.yml moet een eigen projectnaam voor de
         test-stack hebben ('-p $PROJECT_NAME-test', '--project-name', met of zonder aanhalingstekens),
         anders ruimt de test-cleanup de staging-deploy op. Blokkerend.
     - path: "**/Dockerfile*"
       instructions: |
         Base images met een expliciete tag; geen :latest. Geen secrets via ARG of ENV.
         Geen COPY van .env.
-    - path: "{**/admin/**,**/Admin/**,**/(admin)/**,routes/**,**/admin*.py,**/*_admin.py}"
+    - path: "{**/admin/**,**/Admin/**,**/(admin)/**,routes/**,**/routers/admin*.py,**/routes/admin*.py,**/api/admin*.py}"
       instructions: |
         Elke route, controller of server action onder een admin-pad (Next.js: app/admin of app/(admin);
         Laravel: app/Http/Controllers/Admin, routes met admin-middleware) heeft een serverkant-check
